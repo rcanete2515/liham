@@ -191,6 +191,7 @@ ul.embla__container {
     top: 3%;
     -webkit-transform: unset;
             transform: unset;
+    z-index: 10;
   }
 
   .letter-canvas .paper-box {
@@ -217,6 +218,11 @@ ul.embla__container {
     line-height: 1.2;
   }
   .letter-canvas #slideCounter {
-    bottom: 0;
+    bottom: unset;
+    top: 2.5%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 25px;
   }
 }
