@@ -115,7 +115,6 @@ ul.embla__container {
             width: 490px;
             z-index: 1;
             position: absolute;
-            overflow: hidden;
             word-wrap: break-all;
             font-family: "Sriracha", cursive;
 
@@ -126,7 +125,7 @@ ul.embla__container {
 
             p.by {
                 position: absolute;
-                bottom: 0;
+                bottom: -25px;
                 font-size: 1.25rem;
             }
 
@@ -184,5 +183,54 @@ ul.embla__container {
         color: #fff;
         font-family: "Sriracha", cursive;
         font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .embla__buttons {
+        position: unset;
+    
+        button {
+            top: 60px;
+            transform: unset;
+    
+        }
+    }
+
+    .letter-canvas {
+        .paper-box {
+            width: 100%;
+
+            img.paper {
+                width: 100%;
+            }
+
+            .letter-content {
+                width: 70%;
+
+                p {
+                    font-size: 1rem;
+                    line-height: 25px;
+                }
+
+                img {
+                    max-width: 100%;
+                }
+
+                &.intro {
+                    h1 {
+                        font-size: 30px;
+                    }
+                }
+
+                &.fifth {
+                    p.special {
+                        font-size: 30px;
+                        line-height: 1.2;
+                    }
+                }
+            }
+        }
     }
 }

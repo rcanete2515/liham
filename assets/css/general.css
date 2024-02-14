@@ -132,7 +132,6 @@ ul.embla__container {
   width: 490px;
   z-index: 1;
   position: absolute;
-  overflow: hidden;
   word-wrap: break-all;
   font-family: "Sriracha", cursive;
 }
@@ -142,7 +141,7 @@ ul.embla__container {
 }
 .letter-canvas .paper-box .letter-content p.by {
   position: absolute;
-  bottom: 0;
+  bottom: -25px;
   font-size: 1.25rem;
 }
 .letter-canvas .paper-box .letter-content.intro {
@@ -182,4 +181,39 @@ ul.embla__container {
   color: #fff;
   font-family: "Sriracha", cursive;
   font-size: 2.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .embla__buttons {
+    position: unset;
+  }
+  .embla__buttons button {
+    top: 60px;
+    -webkit-transform: unset;
+            transform: unset;
+  }
+
+  .letter-canvas .paper-box {
+    width: 100%;
+  }
+  .letter-canvas .paper-box img.paper {
+    width: 100%;
+  }
+  .letter-canvas .paper-box .letter-content {
+    width: 70%;
+  }
+  .letter-canvas .paper-box .letter-content p {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  .letter-canvas .paper-box .letter-content img {
+    max-width: 100%;
+  }
+  .letter-canvas .paper-box .letter-content.intro h1 {
+    font-size: 30px;
+  }
+  .letter-canvas .paper-box .letter-content.fifth p.special {
+    font-size: 30px;
+    line-height: 1.2;
+  }
 }
