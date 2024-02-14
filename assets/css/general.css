@@ -188,7 +188,7 @@ ul.embla__container {
     position: unset;
   }
   .embla__buttons button {
-    top: 60px;
+    top: 3%;
     -webkit-transform: unset;
             transform: unset;
   }
