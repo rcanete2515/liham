@@ -216,4 +216,7 @@ ul.embla__container {
     font-size: 30px;
     line-height: 1.2;
   }
+  .letter-canvas #slideCounter {
+    bottom: 0;
+  }
 }
